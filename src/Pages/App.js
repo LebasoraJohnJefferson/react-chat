@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
 import Chat from './components/Chat'
 import SignIn from './components/SignIn'
 import {auth} from '../../src/firebase'
@@ -7,6 +7,8 @@ import './css/styles.css'
 
 const App=()=> {
     const [user] = useAuthState(auth)
+    useEffect(()=>{
+    },[user])
     return (
         <div>
             {user ? <Chat/> : <SignIn/> }
