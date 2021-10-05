@@ -7,8 +7,6 @@ import './css/styles.css'
 
 const App=()=> {
     const [user] = useAuthState(auth)
-    useEffect(()=>{
-    },[user])
     return (
         <div>
             {user ? <Chat/> : <SignIn/> }
