@@ -9,7 +9,7 @@ const App=()=> {
     const [user] = useAuthState(auth)
     return (
         <div>
-            {user?<Chat/>:<SignIn/>}
+            {user ? <Chat/> : <SignIn/> }
         </div>
     )
 }

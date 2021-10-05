@@ -1,0 +1,191 @@
+[debug] [2021-10-05T09:14:24.468Z] ----------------------------------------------------------------------
+[debug] [2021-10-05T09:14:24.474Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator.DESKTOP-V9SASNF\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-10-05T09:14:24.475Z] CLI Version:   9.19.0
+[debug] [2021-10-05T09:14:24.476Z] Platform:      win32
+[debug] [2021-10-05T09:14:24.476Z] Node Version:  v16.7.0
+[debug] [2021-10-05T09:14:24.482Z] Time:          Tue Oct 05 2021 02:14:24 GMT-0700 (Pacific Daylight Time)
+[debug] [2021-10-05T09:14:24.483Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-05T09:14:24.487Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-10-05T09:14:24.537Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-05T09:14:24.538Z] > authorizing via signed-in user (solitary.soul23@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Administrator.DESKTOP-V9SASNF\Documents\React\firebase-react
+
+[debug] [2021-10-05T09:14:29.201Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-10-05T09:14:29.202Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-10-05T09:14:56.000Z] > refreshing access token with scopes: []
+[debug] [2021-10-05T09:14:56.001Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-05T09:14:56.778Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 05 Oct 2021 09:15:24 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T09:14:56.795Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-10-05T09:14:58.203Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-10-05T09:14:58.203Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project firechat-db515 (firechat) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-10-05T09:15:04.594Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-05T09:15:04.597Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-05T09:15:05.107Z] <<< HTTP RESPONSE 200 {"date":"Tue, 05 Oct 2021 09:15:33 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T09:15:05.121Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/firechat-db515/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-10-05T09:15:06.989Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 09:15:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2021-10-05T09:15:06.992Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/firechat-db515/services/firebasedatabase.googleapis.com:enable  
+ 
+[debug] [2021-10-05T09:15:08.675Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 09:15:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T09:15:18.686Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/firechat-db515/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-10-05T09:15:21.111Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 09:15:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-10-05T09:15:21.116Z] > refreshing access token with scopes: []
+[debug] [2021-10-05T09:15:21.117Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-05T09:15:22.152Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 05 Oct 2021 09:15:50 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T09:15:22.165Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/firechat-db515 [none]
+[debug] [2021-10-05T09:15:23.869Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/firechat-db515 200
+[debug] [2021-10-05T09:15:23.869Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/firechat-db515 {"projectId":"firechat-db515","projectNumber":"392133501614","displayName":"firechat","name":"projects/firechat-db515","resources":{"hostingSite":"firechat-db515","storageBucket":"firechat-db515.appspot.com","locationId":"asia-east2"},"state":"ACTIVE"}
+[debug] [2021-10-05T09:15:35.989Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-05T09:15:35.989Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-05T09:15:37.274Z] <<< HTTP RESPONSE 200 {"date":"Tue, 05 Oct 2021 09:16:05 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T09:15:37.290Z] >>> HTTP REQUEST POST https://firebasedatabase.googleapis.com/v1beta/projects/firechat-db515/locations/asia-southeast1/instances?databaseId=firechat-db515-default-rtdb&validateOnly=true  
+ {"type":"default_database"}
+[debug] [2021-10-05T09:15:39.707Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 09:16:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T09:15:39.711Z] >>> HTTP REQUEST POST https://firebasedatabase.googleapis.com/v1beta/projects/firechat-db515/locations/asia-southeast1/instances?databaseId=firechat-db515-default-rtdb  
+ {"type":"default_database"}
+[debug] [2021-10-05T09:15:42.963Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 09:16:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-10-05T09:15:47.429Z] >>> HTTP REQUEST GET https://firechat-db515-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json  
+ 
+[debug] [2021-10-05T09:15:50.077Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Tue, 05 Oct 2021 09:16:18 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] +  Database Rules for firechat-db515-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2021-10-05T09:15:50.085Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/firechat-db515/services/firestore.googleapis.com  
+ 
+[debug] [2021-10-05T09:15:52.582Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 09:16:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T09:15:52.584Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/firechat-db515  
+ 
+[debug] [2021-10-05T09:15:54.812Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 09:16:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T09:15:54.813Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-10-05T09:15:54.814Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-05T09:15:54.814Z] > authorizing via signed-in user (solitary.soul23@gmail.com)
+[debug] [2021-10-05T09:15:54.814Z] [iam] checking project firechat-db515 for permissions ["firebase.projects.get"]
+[debug] [2021-10-05T09:15:54.815Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/firechat-db515:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-10-05T09:15:57.837Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 09:16:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=820","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-10-05T09:15:58.111Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/firechat-db515/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-10-05T09:15:59.586Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 09:16:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T09:15:59.587Z] Found ruleset: projects/firechat-db515/rulesets/45897eb9-57c3-43df-9656-07c3aafe80b8
+[debug] [2021-10-05T09:15:59.587Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/firechat-db515/rulesets/45897eb9-57c3-43df-9656-07c3aafe80b8  
+ 
+[debug] [2021-10-05T09:16:01.017Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 09:16:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-10-05T09:16:03.698Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/firechat-db515/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2021-10-05T09:16:03.699Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/firechat-db515/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2021-10-05T09:16:04.591Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 09:16:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T09:16:04.593Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 09:16:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2021-10-05T09:16:04.599Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-05T09:16:04.600Z] > authorizing via signed-in user (solitary.soul23@gmail.com)
+[debug] [2021-10-05T09:16:04.600Z] [iam] checking project firechat-db515 for permissions ["firebase.projects.get"]
+[debug] [2021-10-05T09:16:04.600Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/firechat-db515:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-10-05T09:16:06.080Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 09:16:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=803","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T09:16:06.081Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/firechat-db515/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2021-10-05T09:16:06.081Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/firechat-db515/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2021-10-05T09:16:07.937Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 09:16:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T09:16:08.180Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 09:16:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[error] NPM install failed, continuing with Firebase initialization...
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote \/404.html 
+[debug] [2021-10-05T09:24:58.673Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-10-05T09:25:04.783Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-10-05T09:25:04.784Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.1.1","browserURL":"https://www.gstatic.com/firebasejs/9.1.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.1.1/firebase.tgz"},"live":{"version":"9.1","browserURL":"https://www.gstatic.com/firebasejs/live/9.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.1/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.1.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.1.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.1.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.1.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.1.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.1.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.1.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.1.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.1.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.1.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.1.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.1.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.memory.js"}}
+[info] +  Wrote \/index.html 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at C:\Users\Administrator.DESKTOP-V9SASNF\Documents\React\firebase-react 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=247854118&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-10-05T09:28:48.214Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"fa7c24a334511c64e236","redirect_uri":"http://localhost:9005","state":"247854118"}
+[debug] [2021-10-05T09:28:50.872Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Tue, 05 Oct 2021 09:29:18 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"92518477a4324eb81b4c85d71f39ab29\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com viewscreen-lab.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/ github.com/socket-worker-0af8a29d.js gist.github.com/socket-worker-0af8a29d.js","x-github-request-id":"3663:751C:11B559:17A2AB:615C1AEE"}
+[debug] [2021-10-05T09:28:50.884Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-10-05T09:28:56.118Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-10-05T09:28:56.118Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"LebasoraJohnJefferson","id":89246739,"node_id":"MDQ6VXNlcjg5MjQ2NzM5","avatar_url":"https://avatars.githubusercontent.com/u/89246739?v=4","gravatar_id":"","url":"https://api.github.com/users/LebasoraJohnJefferson","html_url":"https://github.com/LebasoraJohnJefferson","followers_url":"https://api.github.com/users/LebasoraJohnJefferson/followers","following_url":"https://api.github.com/users/LebasoraJohnJefferson/following{/other_user}","gists_url":"https://api.github.com/users/LebasoraJohnJefferson/gists{/gist_id}","starred_url":"https://api.github.com/users/LebasoraJohnJefferson/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/LebasoraJohnJefferson/subscriptions","organizations_url":"https://api.github.com/users/LebasoraJohnJefferson/orgs","repos_url":"https://api.github.com/users/LebasoraJohnJefferson/repos","events_url":"https://api.github.com/users/LebasoraJohnJefferson/events{/privacy}","received_events_url":"https://api.github.com/users/LebasoraJohnJefferson/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":7,"public_gists":0,"followers":4,"following":4,"created_at":"2021-08-20T08:18:48Z","updated_at":"2021-10-05T09:29:02Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":1937,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as LebasoraJohnJefferson 
+[info] 
+[debug] [2021-10-05T09:29:10.391Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-10-05T09:29:14.600Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-10-05T09:29:14.600Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-10-05T09:29:15.573Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-10-05T09:29:18.814Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-10-05T09:29:18.814Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-10-05T09:29:52.141Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-10-05T09:29:58.877Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-10-05T09:30:00.632Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-10-05T09:30:00.632Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-10-05T09:30:02.285Z] >>> [apiv2][query] GET https://api.github.com/repos/use/actions/secrets/public-key type=owner
+[debug] [2021-10-05T09:30:03.051Z] >>> [apiv2][query] GET https://api.github.com/repos/r/actions/secrets/public-key type=owner
+[debug] [2021-10-05T09:30:05.154Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
