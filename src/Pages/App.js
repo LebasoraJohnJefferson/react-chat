@@ -8,9 +8,9 @@ import './css/styles.css'
 const App=()=> {
     const [user] = useAuthState(auth)
     return (
-        <>
+        <div>
             {user?<Chat/>:<SignIn/>}
-        </>
+        </div>
     )
 }
 
