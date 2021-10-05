@@ -31,13 +31,13 @@ const Chat=()=> {
 }
 
 const chat=[{
-    //chat 1
+    //chat 0
     backgroundColor:'#0a0b32',
     position:'fixed',
     left:'0', top:'0',
     width:'100%',height:'100vh',
     display:'grid',
-    gridTemplateRows:'auto 1fr auto',
+    gridTemplateRows:'auto 1fr',
     gridTemplateColumns:'1fr',
 },{
     //chat 1
@@ -48,7 +48,8 @@ const chat=[{
     borderTop:'3px solid rgba(255,255,255,.3)',
     overflowX:'hidden',
     wordWrap:'break-word',
-    overflowWrap:'break-all'
+    overflowWrap:'break-all',
+    marginBottom:'5rem',
 
 },{
     //chat 2
