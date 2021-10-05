@@ -49,7 +49,7 @@ const chat=[{
     overflowX:'hidden',
     wordWrap:'break-word',
     overflowWrap:'break-all',
-    marginBottom:'5rem',
+    marginBottom:'6.5rem',
 
 },{
     //chat 2

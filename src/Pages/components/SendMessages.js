@@ -8,7 +8,6 @@ const SendMessages=()=> {
     async function sendMessage(e){
         e.preventDefault()
         const {uid,photoURL}=auth.currentUser
-        console.log('submit')
         await db.collection('messages').add({
             text:msg,
             photoURL,
