@@ -1,0 +1,17 @@
+import React from 'react'
+import Chat from './components/Chat'
+import SignIn from './components/SignIn'
+import {auth} from '../../src/firebase'
+import {useAuthState} from 'react-firebase-hooks/auth'
+import './css/styles.css'
+
+const App=()=> {
+    const [user] = useAuthState(auth)
+    return (
+        <>
+            {user?<Chat/>:<SignIn/>}
+        </>
+    )
+}
+
+export default App
