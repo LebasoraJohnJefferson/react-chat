@@ -59,19 +59,19 @@ const chat=[{
     //chat 2
     backgroundColor:'#23c2c4',
     display:'flex',
-    width:'90vw', 
-    transform:'translateX(30%)',
+    width:'85vw', 
+    transform:'translateX(7%)',
     alignItems:'center',
     padding:'10px 0px',
     borderRadius:'10px',
     
 },{
     //chat 3
-    transform:'translateX(-30%)',
+    transform:'translateX(-7%)',
     backgroundColor:'#137838',
     marginTop:'10px',
     display:'flex',
-    width:'90vw', padding:'10px 0px',
+    width:'85vw', padding:'10px 0px',
     alignItems:'center',
     borderRadius:'10px'
 },{
