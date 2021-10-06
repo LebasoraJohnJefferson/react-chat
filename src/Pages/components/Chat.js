@@ -53,7 +53,7 @@ const chat=[{
     wordWrap:'break-word',
     overflowWrap:'break-all',
     gridGap:'10px',
-    marginBottom:'6.5rem',
+    marginBottom:'7rem',
 
 },{
     //chat 2
