@@ -59,7 +59,7 @@ const chat=[{
     //chat 2
     backgroundColor:'#23c2c4',
     display:'flex',
-    width:'60vw', 
+    width:'90vw', 
     transform:'translateX(30%)',
     alignItems:'center',
     padding:'10px 0px',
@@ -71,7 +71,7 @@ const chat=[{
     backgroundColor:'#137838',
     marginTop:'10px',
     display:'flex',
-    width:'60vw', padding:'10px 0px',
+    width:'90vw', padding:'10px 0px',
     alignItems:'center',
     borderRadius:'10px'
 },{
