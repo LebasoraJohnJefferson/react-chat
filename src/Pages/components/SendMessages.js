@@ -4,22 +4,29 @@ import {auth, db} from '../../firebase'
 
 const SendMessages=()=> {
     const [msg,setMsg]=useState('');
+    const [placeholder,setPlaceholder]=useState('Send Message...')
 
     async function sendMessage(e){
         e.preventDefault()
         const {uid,photoURL}=auth.currentUser
-        await db.collection('messages').add({
-            text:msg,
-            photoURL,
-            uid,
-            createdAt: firebase.firestore.FieldValue.serverTimestamp()
-        })
-        setMsg('');
+        if(msg.trim()!==''){
+            await db.collection('messages').add({
+                text:msg,
+                photoURL,
+                uid,
+                createdAt: firebase.firestore.FieldValue.serverTimestamp()
+            })
+            setMsg('');
+            setPlaceholder('Send Message...')
+        }else{
+            setMsg('')
+            setPlaceholder('Empty Message...')
+        }
     }
     return (
         <div style={messagesStyle[0]}>
             <form style={messagesStyle[1]} onSubmit={sendMessage} class='form'>
-                <input style={messagesStyle[2]} value={msg} onChange={(e)=>setMsg(e.target.value)} placeholder='Send Message...'/>
+                <input style={messagesStyle[2]} value={msg} onChange={(e)=>setMsg(e.target.value)} placeholder={placeholder} />
                 <button style={messagesStyle[3]}  type="submit"><i class="far fa-paper-plane"></i></button>
             </form>
         </div>
