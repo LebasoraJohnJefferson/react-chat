@@ -16,12 +16,11 @@ const SendMessages=()=> {
                 uid,
                 createdAt: firebase.firestore.FieldValue.serverTimestamp()
             })
-            setMsg('');
             setPlaceholder('Send Message...')
         }else{
-            setMsg('')
             setPlaceholder('Empty Message...')
         }
+        setMsg('');
     }
     return (
         <div style={messagesStyle[0]}>
